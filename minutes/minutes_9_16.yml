@@ -1,0 +1,18 @@
+date: September 12, 2016
+meeting_type: group
+attendance: [<josephpu>, <jrhoeber>, <fgpinnoc>]
+absent: [<komlanaz>]
+excused_absences: [ # Any legitamite excuses for absent team members
+  ]
+task_progress: [ # All group members must be included here even if they haven't made any progress since the last meeting
+  {ubit: <komlanaz>, progress: ?},
+  {ubit: <josephpu>, progress: Looked in to bootsrap and HTML editors for mockup},
+  {ubit: <jrhoeber>, progress: Looked in to bootsrap and HTML editors for mockup},
+  {ubit: <fgpinnoc>, progress: Looked in to bootsrap and HTML editors for mockup},
+  ]
+issues: [ # Post any issues here. Issues that cannot be addressed by the group should especially be included
+  
+  ]
+Notes:  | # Anything covered in the meeting that doesn't fit elsewhere.
+  Discussed which editor to use for the mockup and when to meet next.
+  Next meeting planned as well as what to do. Mockup to be completed by the end of the afternoon on Sunday.
