@@ -1,0 +1,20 @@
+date: September 12, 2016
+meeting_type: ta
+attendance: [<komlanaz>, <josephpu>, <jrhoeber>, <fgpinnoc>]
+absent: []
+excused_absences: [ # Any legitamite excuses for absent team members
+  {ubit: <>, : reason: },
+  {ubit: <>, reason: }
+  ]
+task_progress: [ # All group members must be included here even if they haven't made any progress since the last meeting
+  {ubit: <komlanaz>, progress: Studied django and other web dev frameworks.},
+  {ubit: <josephpu>, progress: Studied django and other web dev frameworks. Got project req. from Carl},
+  {ubit: <jrhoeber>, progress: Studied django and other web dev frameworks.},
+  {ubit: <fgpinnoc>, progress: Studied django and other web dev frameworks.},
+  ]
+issues: [ # Post any issues here. Issues that cannot be addressed by the group should especially be included
+  ]
+Notes:  | # Anything covered in the meeting that doesn't fit elsewhere.
+  Group discussed django
+  Jesse was set to investigate the use of shibolleth for client logins for our app. Is it possible?
+  Group discussed the creation of a view for first demo as well as the process.
