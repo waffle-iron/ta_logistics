@@ -32,8 +32,9 @@
     <!--<link href="theme.css" rel="stylesheet">-->
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script>
-<script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <!--[if lt IE 9]>
+    <script src="../../assets/js/ie8-responsive-file-warning.js"></script>
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
     <![endif]-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -61,7 +62,8 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -72,19 +74,24 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Support Pages <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Support
+                            Pages <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="http://www-student.cse.buffalo.edu/~atri/cse331/support/background.html">Background Material</a></li>
-                            <li><a href="http://www-student.cse.buffalo.edu/~atri/cse331/support/common.html">Common Mistakes</a></li>
+                            <li><a href="http://www-student.cse.buffalo.edu/~atri/cse331/support/background.html">Background
+                                Material</a></li>
+                            <li><a href="http://www-student.cse.buffalo.edu/~atri/cse331/support/common.html">Common
+                                Mistakes</a></li>
                             <li class="divider"></li>
                             <!--       <li class="dropdown-header">Nav header</li>-->
-                            <li><a href="http://www-student.cse.buffalo.edu/~atri/cse331/support/index.html">Support Page Home</a></li>
+                            <li><a href="http://www-student.cse.buffalo.edu/~atri/cse331/support/index.html">Support
+                                Page Home</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account<span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account<span
+                                class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li><a>Username</a></li>
                             <li><a>Logout</a></li>
@@ -98,7 +105,6 @@
 </div>
 <div class="container theme-showcase" role="main">
     <!-- Main jumbotron for a primary marketing message or call to action -->
-
     <div class="page-header">
         <div class="jumbotron">
             <h2>Find Your TA</h2>
@@ -106,56 +112,96 @@
 
         <div class="footnotes">
 
-            <form>
-                <div class="form-group">
-                    <label for="exampleSelect2">Job Applicants</label>
-                    <select multiple class="form-control" id="exampleSelect2">
-                        <option>
-							<ul>
-								<li><div width="600">Jane Doe:</div></li>
-								<li>Grade in Class</li>
-							</ul>
-						</option>
-                        <option>
-							<ul>
-								<li>John Smith:</li>
-								<li>Grade in Class</li>
-							</ul>
-						</option>
-						<option>
-							<ul>
-								<li>Example Name: </li>
-								<li>Grade in Class</li>
-							</ul>
-						</option>
-						<option>
-							<ul>
-								<li>Example Name: </li>
-								<li>Grade in Class</li>
-							</ul>
-						</option>
-						<option>
-							<ul>
-								<li>Example Name: </li>
-								<li>Grade in Class</li>
-							</ul>
-						</option>
-						<option>
-							<ul>
-								<li>Example Name: </li>
-								<li>Grade in Class</li>
-							</ul>
-						</option>
-                    </select>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input">
-                        Check me out
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            <table class=table>
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Grade</th>
+                    <th>Email Address</th>
+                    <th>Resume</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope=row>1</th>
+                    <td>Jane Doe</td>
+                    <td>A</td>
+                    <td>jdoe@buffalo.edu</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default">Download</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope=row>2</th>
+                    <td>John Smith</td>
+                    <td>A-</td>
+                    <td>js@buffalo.edu</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default">Download</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope=row>3</th>
+                    <td>Example name</td>
+                    <td>C</td>
+                    <td>ex1@buffalo.edu</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default">Download</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope=row>3</th>
+                    <td>Example name</td>
+                    <td>C</td>
+                    <td>ex1@buffalo.edu</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default">Download</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope=row>3</th>
+                    <td>Example name</td>
+                    <td>C</td>
+                    <td>ex1@buffalo.edu</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default">Download</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope=row>3</th>
+                    <td>Example name</td>
+                    <td>C</td>
+                    <td>ex1@buffalo.edu</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default">Download</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope=row>3</th>
+                    <td>Example name</td>
+                    <td>C</td>
+                    <td>ex1@buffalo.edu</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default">Download</button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
 
         </div> <!-- /container -->
 
@@ -174,7 +220,9 @@
 	MathJax.Hub.Config({
   		tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 	});
-	</script>
+
+
+        </script>
         <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
 
         <!-- JS for Tocify -->
@@ -189,6 +237,8 @@
         <script type="text/javascript" src="../../js/bigfoot.js"></script>
         <script type="text/javascript">
             $.bigfoot();
+
+
         </script>
 
         <!-- uncomment lines below to include extra p5 libraries -->
