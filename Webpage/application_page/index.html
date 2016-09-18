@@ -16,9 +16,9 @@
     <!-- Bootstrap theme -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet">
     <!-- BIgfoot css -->
-    <link href="../../css/bigfoot-number.css" rel="stylesheet">
+    <link href="../css/bigfoot-number.css" rel="stylesheet">
     <!-- Callout css from Chris Pratt: http://cpratt.co/twitter-bootstrap-callout-css-styles/--->
-    <link href="../../css/callout.css" rel="stylesheet">
+    <link href="../css/callout.css" rel="stylesheet">
     <!-- CSS for sticky footnote -->
     <!--<link href="../css/sticky-footer.css" rel="stylesheet">-->
     <!-- Specific css to make height 100% --->
@@ -26,8 +26,7 @@
     <!-- Font awesome-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Tocify--->
-    <link rel="stylesheet" href="../../css/jquery.tocify.css">
-
+    <link rel="stylesheet" href="../css/jquery.tocify.css">
     <!-- Custom styles for this template -->
     <!--<link href="theme.css" rel="stylesheet">-->
 
@@ -72,21 +71,18 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Support Pages <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Options<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="http://www-student.cse.buffalo.edu/~atri/cse331/support/background.html">Background Material</a></li>
-                                <li><a href="http://www-student.cse.buffalo.edu/~atri/cse331/support/common.html">Common Mistakes</a></li>
-                                <li class="divider"></li>
-                                <!--       <li class="dropdown-header">Nav header</li>-->
-                                <li><a href="http://www-student.cse.buffalo.edu/~atri/cse331/support/index.html">Support Page Home</a></li>
+                                <li><a href="#">Option 1</a></li>
+                                <li><a href="#">Option 2</a></li>
                             </ul>
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account<span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Username<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a>Username</a></li>
+                                <li><a>Manage Account</a></li>
                                 <li><a>Logout</a></li>
                             </ul>
                         </li>
@@ -96,9 +92,8 @@
             </div>
         </nav>
     </div>
-    <div class="container theme-showcase" role="main">
-        <!-- Main jumbotron for a primary marketing message or call to action -->
 
+    <div class="container theme-showcase" role="main">
         <div class="page-header">
             <div class="jumbotron">
                 <h2>Apply For Job</h2>
@@ -117,57 +112,63 @@
                             <option>CSE 442 UTA</option>
                         </select>
                     </div>
+
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <label for="first-name-field">First Name</label>
+                        <input class="form-control" id="first-name-field" placeholder="Enter First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name-field">Last Name</label>
+                        <input class="form-control" id="last-name-field" placeholder="Enter Last Name">
+                    </div>
+                    <label for="email-field">Email Address</label>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="UBIT Name" aria-describedby="basic-addon2">
+                            <span class="input-group-addon" id="email-field">@buffalo.edu</span>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="GPASelect">Select GPA</label>
+                        <select class="form-control" id="GPASelect">
+                            <option>4.0</option>
+                            <option>3.9</option>
+                            <option>3.8</option>
+                            <option>3.7</option>
+                            <option>3.6</option>
+                            <option>3.5</option>
+                            <option>3.4</option>
+                            <option>3.3</option>
+                            <option>3.2</option>
+                            <option>3.1</option>
+                            <option>3.0</option>
+                            <option>&lt; 3.0</option>
+                        </select>
                     </div>
 
                     <div class="form-group">
-                        <label for="exampleSelect2">Example multiple select</label>
-                        <select multiple class="form-control" id="exampleSelect2">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                        <label for="GradeSelect">Grade in class applying for</label>
+                        <select class="form-control" id="GradeSelect">
+                            <option>A</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B</option>
+                            <option>B-</option>
+                            <option>< B-</option>
+
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleTextarea">Example textarea</label>
-                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                        <label for="explainationArea">Briefly explain why you would like this position</label>
+                        <textarea class="form-control" id="explainationArea" rows="3"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputFile">File input</label>
+                        <label for="exampleInputFile">Resume</label>
                         <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-                        <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-                    </div>
-                    <fieldset class="form-group">
-                        <legend>Radio buttons</legend>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                Option one is this and that&mdash;be sure to include why it's great
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                                Option two can be something else and selecting it will deselect option one
-                            </label>
-                        </div>
-                        <div class="form-check disabled">
-                            <label class="form-check-label">
-                                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-                                Option three is disabled
-                            </label>
-                        </div>
-                    </fieldset>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input">
-                            Check me out
-                        </label>
+                        <small id="fileHelp" class="form-text text-muted">Please enter a PDF or a docx file</small>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -194,14 +195,14 @@
 
             <!-- JS for Tocify -->
             <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-            <script src="../../js/jquery.tocify.min.js"></script>
+            <script src="../js/jquery.tocify.min.js"></script>
             <!--	<script type="text/javascript">
                     $("#toc").tocify();
                 </script>
             -->
 
             <!-- Bigfoot for footnotes-->
-            <script type="text/javascript" src="../../js/bigfoot.js"></script>
+            <script type="text/javascript" src="../js/bigfoot.js"></script>
             <script type="text/javascript">
                 $.bigfoot();
             </script>
