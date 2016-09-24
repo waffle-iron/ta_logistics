@@ -5,7 +5,7 @@ import datetime
 from django.utils import timezone
 
 
-class Applications(models.Model):
+class Application(models.Model):
     applying_class = models.CharField(max_length=6)
     ubit_name = models.CharField(max_length=10)
     first_name = models.CharField(max_length=30)
@@ -14,7 +14,7 @@ class Applications(models.Model):
     class_grade = models.CharField(max_length=2)
     resume_url = models.URLField()
 
-class OpenClasses(models.Model):
+class OpenClass(models.Model):
     class_identifier = models.CharField(max_length=6)
     professor_ubit = models.CharField(max_length=10)
     professor_first_name = models.CharField(max_length=30)

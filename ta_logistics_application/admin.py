@@ -1,10 +1,11 @@
 from django.contrib import admin
-from .models import Applications, OpenClasses
+from .models import Application, OpenClass
 
-class ApplicationsInline(admin.TabularInline):
-    model = Applications
+class ApplicationAdmin(admin.ModelAdmin):
+    model = Application
 
-class OpenClassesAdmin(admin.ModelAdmin):
-    model = OpenClasses
+class OpenClassAdmin(admin.ModelAdmin):
+    model = OpenClass
 
-admin.site.register(OpenClasses, OpenClassesAdmin)
+admin.site.register(OpenClass, OpenClassAdmin)
+admin.site.register(Application, ApplicationAdmin)
