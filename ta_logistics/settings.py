@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ta_logistics_application',
-    'oauth2client.contrib.django_util',
     'bootstrap3'
 ]
 
