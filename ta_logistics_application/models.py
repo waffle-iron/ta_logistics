@@ -21,4 +21,6 @@ class OpenClass(models.Model):
     professor_last_name = models.CharField(max_length=30)
     available_slots = models.IntegerField()
 
-
+class Resume(models.Model):
+    document = models.FileField(upload_to='resumes/')
+    uploaded_at = models.DateTimeField(auto_now_add=True)
