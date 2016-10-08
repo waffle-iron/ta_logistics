@@ -14,11 +14,19 @@ class Application(models.Model):
     class_grade = models.CharField(max_length=2)
     resume_url = models.URLField()
 
-class OpenClass(models.Model):
-    class_identifier = models.CharField(max_length=6)
+class Classes(models.Model):
     professor_ubit = models.CharField(max_length=10)
     professor_first_name = models.CharField(max_length=30)
     professor_last_name = models.CharField(max_length=30)
-    available_slots = models.IntegerField()
+    available_hours = models.IntegerField()
 
+class Professors(models.Model):
+    ubit_name = models.CharField(max_length=10)
+    first_name = models.CharField(max_length=15)
+    last_name = models.CharField(max_length=15)
 
+class ApplicationParameters(models.Model):
+    field_name = models.CharField(max_length=30)
+    is_default = models.BooleanField()
+    data_type = models.CharField(max_length=6)
+    max_length = models.IntegerField()
